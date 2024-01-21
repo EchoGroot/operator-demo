@@ -1,0 +1,15 @@
+apiVersion: appcontroller.yuyy.com/v1alpha1
+kind: App
+metadata:
+  name: app-demo
+spec:
+  deployment:
+    image: "nginx"
+    name: app-deployment-demo
+    replicas: 2
+  service:
+    name: app-service-demo
+  ingress:
+    name: app-ingress-demo
+
+status: { }
